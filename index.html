@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership Inventory</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Car Dealership Inventory</h1>
+    <div id="status"></div>
+
+    <div class = "container">
+        <div id="list"></div>
+           <h2>Available Cars</h2>
+           <ul id = "carList"></ul>
+        </div>
+
+    <div class = "details">
+        <h2>Car Details </h2>
+        <input type = "hidden" id="carId">
+
+        <input type = "text" id = "make" placeholder="Make">
+        <input type = "text" id = "model" placeholder="Model">
+        <input type = "number" id = "year" placeholder="Year">
+        <input type = "number" id = "price" placeholder="Price">
+
+        <select id = "statusSelect">
+            <option value="Available">Available</option>
+            <option value="Sold">Sold</option>
+        </select>
+
+        <button id = "createBtn">Create</button>
+        <button id = "updateBtn">Update</button>
+        <button id = "deleteBtn">Delete</button>
+    </div>
+    <script src="lib/jQuery-3.6.0.js"></script>
+    <script src ="js/data.js"></script>
+    <script src ="js/app.js"></script>
+</body>
+</html>
